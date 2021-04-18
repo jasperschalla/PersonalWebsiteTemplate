@@ -56,6 +56,7 @@ function showProject(e,no){
     element.classList.add("expand");
     document.getElementById(("projectText"+no)).classList.add("info_expand");
     document.getElementById(("close"+no)).classList.add("icon_expand");
+    document.getElementById("extraIdentifier").classList.add("showExtraBottom");
 }
 
 function hideProject(e,no){
@@ -65,6 +66,23 @@ function hideProject(e,no){
     element.classList.remove("expand");
     document.getElementById(("projectText"+no)).classList.remove("info_expand");
     document.getElementById(("close"+no)).classList.remove("icon_expand");
+    var elements = document.getElementsByClassName("project");
+    expanded_bool = checkExpanded(elements);
+    if (!expanded_bool){
+        document.getElementById("extraIdentifier").classList.remove("showExtraBottom");
+    } else {}
+}
+
+function checkExpanded(classElements){
+    var expanded = false;
+    for (j=0;j<classElements.length;j++){
+        for (i=0;i<classElements[j].classList.length;i++){
+            if (classElements[j].classList[i]=="expand"){
+                expanded = true;
+            } else {}
+        }
+    }
+    return expanded;
 }
 
 // 3. JQuery event
@@ -119,13 +137,13 @@ $(document).ready(function(){
      var starInfotext = score + "x";
      $("#resultTextInfoStar").text(starInfotext);
      $("#resultTextScoreStar").text(score);
-     $("#resultTextTextStar").text("You are pretty fast! Try to catch as many shooting stars as possible");
+     $("#resultTextTextStar").text("You are pretty fast! Try to catch as many shooting stars as possible.");
   });
     
   $("#blobfish").click(function(){
      scoreBlobSeen++;
      scoreBlob = 1;
-     var scoreTextBlob = "You have found a blobfish!";
+     var scoreTextBlob = "You saw a blobfish!";
      $("#scoreDisplayBlob").text(scoreTextBlob);
      $(".scoreBlob").addClass("showScore");
      $("#resultTextInfoBlob .fa").removeClass("fa-times");
@@ -145,7 +163,7 @@ $(document).ready(function(){
   
   $("#satelite").click(function(){
      scoreSatelite = 1;
-     var scoreTextSatelite = "You have found a satelite!";
+     var scoreTextSatelite = "You saw a satelite!";
      $("#scoreDisplaySatelite").text(scoreTextSatelite);
      $(".scoreSatelite").addClass("showScore");
      $("#resultTextInfoSatelite .fa").removeClass("fa-times");
@@ -157,7 +175,7 @@ $(document).ready(function(){
 
   $("#meteor").click(function(){
      scoreMeteor = 1;
-     var scoreTextMeteor = "You have found a flying meteor!";
+     var scoreTextMeteor = "You saw a flying meteor!";
      $("#scoreDisplayMeteor").text(scoreTextMeteor);
      $(".scoreMeteor").addClass("showScore");
      $("#resultTextInfoMeteor .fa").removeClass("fa-times");

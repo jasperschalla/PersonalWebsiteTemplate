@@ -304,7 +304,7 @@ body::-webkit-scrollbar {
 }
 
 #github {
-    background-color: black;
+    background-color: rgb(0, 153, 51);
     color: white;
     font-size: 40px;
     vertical-align: middle;
@@ -312,18 +312,18 @@ body::-webkit-scrollbar {
 
 #linkedIn {
     color: white;
-    background-color: black;
+    background-color: rgb(0, 153, 51);
     font-size: 40px;
     vertical-align: middle;
 }
 
 #xing {
     color: white;
-    background-color: black;
+    background-color: rgb(0, 153, 51);
 }
 
 .linkContainer {
-    background-color: black;
+    background-color: rgb(0, 153, 51);
     padding: 5px 10px;
     border-radius: 15px;
 }
@@ -335,7 +335,7 @@ body::-webkit-scrollbar {
 
 #messageContainer {
     text-align: center;
-    background-color: black;
+    background-color: rgb(0, 153, 51);
     padding: 5px 10px;
     border-radius: 15px;
 }
@@ -422,13 +422,111 @@ body::-webkit-scrollbar {
 }
 
 #soil {
-    background-image: url(landscape.jpg);
+    background-image: url(cliparts/landscape.jpg);
     background-size: 1540px auto;
+    background-repeat: repeat-y;
     height: 1100px; 
 }
 
+.extraBottom {
+    background-image: url(cliparts/landscapeExpand.png);
+    background-size: 1540px auto;
+    width: 100%;
+    height: 1300px;
+    position: absolute;
+    top: 3000px;
+    left: 0px;
+    display: none;
+}
+
+.showExtraBottom {
+    display: block;
+}
+
+#cloudsContainer {
+    position: absolute;
+    top: 1900px;
+    left: 200px;
+    width: 500px;
+    height: 200px;
+}
+
+.clouds {
+    position: absolute;
+    background-image: url(cliparts/clouds.png);
+    left: -500px;
+    background-size: 80px auto;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+}
+
+#clouds1{
+    top: 50px;
+    left: 0px;
+    background-size: 50px auto;
+}
+
+#clouds2{
+    top: 150px;
+    left: -150px;
+}
+
+#clouds3 {
+    top: 100px;
+    left: 300px;
+    background-size: 50px auto;
+}
+
+#clouds4 {
+    top: 50px;
+    left: 500px;
+}
+
+#clouds5 {
+    top: 0px;
+    left: 850px;
+    background-size: 20px auto;
+}
+
+#clouds6 {
+    top: 100px;
+    left: 1000px;
+    background-size: 40px auto;
+}
+
+#cloudMovement1 {
+    position: absolute;
+    top: 0px;
+    left: -800px;
+    width: 1000px;
+    height: 200px;
+    animation: cloudsMove1 90s linear infinite;
+}
+
+#cloudMovement2 {
+    position: absolute;
+    top: 0px;
+    left: -600px;
+    width: 1000px;
+    height: 200px;
+    animation: cloudsMove2 70s linear infinite;
+}
+
+@keyframes cloudsMove1 {
+    0% {visibility: visible;left: -800px;}
+    90% {left: inherit;left: 1700px;}
+    100% {visibility: hidden;left: 1700px;}
+}
+
+@keyframes cloudsMove2 {
+    0% {visibility: visible;left: -600px;}
+    90% {left: inherit;left: 1700px;}
+    100% {visibility: hidden;left: 1700px;}
+}
+
 #satelite {
-    background-image: url(satellite.png);
+    background-image: url(cliparts/satellite.png);
     background-size: 100px auto;
     background-repeat: no-repeat;
     height: 100px;
@@ -446,7 +544,7 @@ body::-webkit-scrollbar {
     top: 30px;
     height: 100px;
     width: 100px;
-    background-image: url(blobfish_cut.png);
+    background-image: url(cliparts/blobfish_cut.png);
     background-size: 100px auto;
     background-repeat: no-repeat;
     animation: blobfishMove 30s infinite;
@@ -459,7 +557,7 @@ body::-webkit-scrollbar {
     top: -42px;
     height: 100px;
     width: 100px;
-    background-image: url(droplet_final.png);
+    background-image: url(cliparts/droplet_final.png);
     background-size: 100px auto;
     background-repeat: no-repeat;
     opacity: 0;
@@ -1030,7 +1128,7 @@ body::-webkit-scrollbar {
     left: 600px;
     width: 300px;
     height: 50px;
-    background-color: rgb(230, 225, 168);
+    background-color: rgb(0, 153, 51);
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
     transition: bottom 2s,
@@ -1294,7 +1392,7 @@ body::-webkit-scrollbar {
     left: -100px;
     height: 100px;
     width: 100px;
-    background-image: url(meteor-clipart-md.png);
+    background-image: url(cliparts/meteor-clipart-md.png);
     background-size: 100px auto;
     background-repeat: no-repeat;
     transform: rotate(-70deg);
@@ -1317,7 +1415,7 @@ body::-webkit-scrollbar {
     left: 100px;
     height: 100px;
     width: 100px;
-    background-image: url(meteor_plain.png);
+    background-image: url(cliparts/meteor_plain.png);
     background-size: 100px auto;
     background-repeat: no-repeat;
     transform: rotate(-70deg);
@@ -1373,7 +1471,7 @@ body::-webkit-scrollbar {
     right: -300px;
     height: 400px;
     width: 600px;
-    background-image: url(blue_whale.png);
+    background-image: url(cliparts/blue_whale.png);
     background-size: 600px auto;
     background-repeat: no-repeat;
     transform: rotate(-120deg);
@@ -1432,7 +1530,7 @@ body::-webkit-scrollbar {
     top: 0px;
     height: 300px;
     width: 300px;
-    background-image: url(droplet_whale.png);
+    background-image: url(cliparts/droplet_whale.png);
     background-size: 300px auto;   
     background-repeat: no-repeat;
     opacity: 0;

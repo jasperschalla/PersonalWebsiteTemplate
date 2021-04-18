@@ -22,7 +22,7 @@
                 <span class="tooltiptext" id="ttt2">Projects</span>
             </div>
             <div style="margin-top: 110px;">
-                <span class="tooltiptext"id="ttt3">Link</span>
+                <span class="tooltiptext"id="ttt3">Links</span>
             </div>
         </div>
         <div id="right_side">
@@ -53,7 +53,7 @@
                         <div id="eventContainer">
                             <div class="event showScroll">
                                 <h3 style="margin-top: 0px;">School</h3>
-                                <p>Dates</p>
+                                <p>Insert Dates</p>
                             </div>
                             <div class="event showScroll"></div>
                             <div class="event showScroll"></div>
@@ -63,10 +63,10 @@
                     </div>
                 </div>
             </div>
-            <div class="container" style="margin-top: 100px;">
+            <div class="container" style="margin-top: 20px;">
                 <h2 style="color: white;" id="heading2">Projects</h2>
                 <div class="project showScroll" id="project1" onclick="showProject(event,'1')">
-                    <p class=projectDescription>1. Projekt</p>
+                    <p class=projectDescription>1. Project</p>
                     <div class="customButtonContainer">
                         <button class="custom_button" id="close1" onclick="hideProject(event,'1')"><i class="material-icons">close_fullscreen</i></button>
                     </div>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="project showScroll" id="project2" onclick="showProject(event,'2')">
-                    <p class=projectDescription>2. Projekt</p>
+                    <p class=projectDescription>2. Project</p>
                     <div class="customButtonContainer">
                         <button class="custom_button" id="close2" onclick="hideProject(event,'2')"><i class="material-icons">close_fullscreen</i></button>
                     </div>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class="project showScroll" id="project3" onclick="showProject(event,'3')">
-                    <p class="projectDescription">3. Projekt</p>
+                    <p class="projectDescription">3. Project</p>
                     <div class="customButtonContainer">
                         <button class="custom_button" id="close3" onclick="hideProject(event,'3')"><i class="material-icons">close_fullscreen</i></button>
                     </div>
@@ -97,7 +97,7 @@
     </div>
     <div id="bottom">
         <div id="links">
-            <h2 style="color: white; grid-area: text; margin-bottom: 50px; text-align: center;" id="heading3">You can find me on</h2>
+            <h2 style="color: white; grid-area: text; margin-bottom: 50px; text-align: center; margin-top: 100px;" id="heading3">You can find me on</h2>
             <div id="linksLine">
                 <div id="linkDivsLeft">
                     <div class="linkContainer">
@@ -141,7 +141,24 @@
             <div id="dropletContainer">
                 <div id="droplet"></div>
             </div>
+            <div id="cloudsContainer">
+                <div id="cloudMovement1">
+                    <div id="clouds1" class="clouds"></div>
+                    <div id="clouds2" class="clouds"></div>
+                    <div id="clouds3" class="clouds"></div>
+                </div>
+                <div id="cloudMovement2">
+                    <div id="clouds4" class="clouds"></div>
+                    <div id="clouds5" class="clouds"></div>
+                    <div id="clouds6" class="clouds"></div>
+                </div>
+            </div>
+            <div id="meteorCrash">
+                <img src="cliparts/meteor_impact.png" id="meteorCrater">
+                <div id="meteorPlain"></div>
+            </div>
             <div id="soil"></div>
+            <div class="extraBottom" id="extraIdentifier"></div>
         </div>
     </div>
     <div id="shootingStarsGame">
@@ -174,10 +191,6 @@
         </div>
         <div class="whaleContainer">
             <div class="whale"></div>
-        </div>
-        <div id="meteorCrash">
-            <img src="cliparts/meteor_impact.png" id="meteorCrater">
-            <div id="meteorPlain"></div>
         </div>
         <div id="meteor"></div>
         <div class="score">
@@ -229,7 +242,7 @@
                         <div id="resultTextSymbolSatelite">
                             <img src="cliparts/satellite.png" class="detailImg">
                         </div>
-                        <div id="resultTextTextSatelite">The satelite is pretty easy to see. Try looking into the night sky</div>
+                        <div id="resultTextTextSatelite">The satelite is pretty easy to see. Try looking into the night sky.</div>
                         <div id="resultTextScoreSatelite">0</div>
                         <div id="resultTextInfoStar">0x</div>
                         <div id="resultTextSymbolStar">
@@ -241,7 +254,7 @@
                         <div id="resultTextSymbolBlob">
                             <img src="cliparts/blobfish_cut.png" class="detailImg">
                         </div>
-                        <div id="resultTextTextBlob">Normally the blobfish lives deep under the sea. However, it comes to the surface from time to time</div>
+                        <div id="resultTextTextBlob">Normally the blobfish lives deep under the sea. However, it comes to the surface from time to time.</div>
                         <div id="resultTextScoreBlob">0</div>
                         <div id="resultTextInfoMeteor"><i class="fa fa-times ckeckImages fa-2x"></i></div>
                         <div id="resultTextSymbolMeteor">
@@ -253,7 +266,7 @@
                         <div id="resultTextSymbolWhale">
                             <img src="cliparts/blue_whale.png" class="detailImg" style="transform: scaleX(-1);">
                         </div>
-                        <div id="resultTextTextWhale">Maybe the blobfish has something to do with this</div>
+                        <div id="resultTextTextWhale">Maybe the blobfish has something to do with this.</div>
                         <div id="resultTextScoreWhale">0</div>
                     </div>
                     <div id="resultTextSaldo"></div>
