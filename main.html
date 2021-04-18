@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="parent_container">
+        <div id="left_side">
+            <div id="page_nav">
+            <a href="#heading3" style="margin-left: 0px;" class="tooltip" id="tt3"><i class="material-icons">circle</i></a>
+            <a href="#heading2" style="margin-left: 110px;" class="tooltip" id="tt2"><i class="material-icons">circle</i></a>
+            <a href="#heading1" style="margin-left: 110px;;" class="tooltip" id="tt1"><i class="material-icons">circle</i></a>
+            </div>
+            <div>
+                <span class="tooltiptext" id="ttt1">Curriculum Vitae</span>
+            </div>
+            <div style="margin-top: 130px;">
+                <span class="tooltiptext" id="ttt2">Projects</span>
+            </div>
+            <div style="margin-top: 110px;">
+                <span class="tooltiptext"id="ttt3">Link</span>
+            </div>
+        </div>
+        <div id="right_side">
+            <div class="container" style="margin-top: 100px;">
+                <h1 style="font-size: 80px; text-align: left; color: rgb(0, 153, 51); margin-bottom: 20px;">Hi there.</h1>
+                <h1 id="start_text">I am Jasper Schalla,<br>an environmental scientist.</h1>
+            </div>
+            <div class="container">
+                <h2 style="color: white; margin-bottom: 100px;" id="heading1">Curriculum Vitae</h2>
+                <div id="curriculumContainer">
+                    <div id="timeline">
+                        <div class="dot showScroll" style="margin-top: 50px;"></div>
+                        <div class="line showScroll"></div>
+                        <div class="dot showScroll"></div>
+                        <div class="line showScroll"></div>
+                        <div class="dot showScroll"></div>
+                        <div class="line showScroll"></div>
+                        <div class="dot showScroll"></div>
+                        <div class="line showScroll"></div>
+                        <div class="dot showScroll"></div>
+                        <div class="line showScroll"></div>
+                        <div class="dot showScroll"></div>
+                    </div>
+                    <div id="timeEvents">
+                        <div id="iconContainer">
+                            <i class="material-icons bigIcon showScroll">school</i>
+                        </div>
+                        <div id="eventContainer">
+                            <div class="event showScroll">
+                                <h3 style="margin-top: 0px;">School</h3>
+                                <p>Dates</p>
+                            </div>
+                            <div class="event showScroll"></div>
+                            <div class="event showScroll"></div>
+                            <div class="event showScroll"></div>
+                            <div class="event showScroll"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 100px;">
+                <h2 style="color: white;" id="heading2">Projects</h2>
+                <div class="project showScroll" id="project1" onclick="showProject(event,'1')">
+                    <p class=projectDescription>1. Projekt</p>
+                    <div class="customButtonContainer">
+                        <button class="custom_button" id="close1" onclick="hideProject(event,'1')"><i class="material-icons">close_fullscreen</i></button>
+                    </div>
+                    <div id="projectText1" class="prjText">
+                        <p>Here is the information</p>
+                    </div>
+                </div>
+                <div class="project showScroll" id="project2" onclick="showProject(event,'2')">
+                    <p class=projectDescription>2. Projekt</p>
+                    <div class="customButtonContainer">
+                        <button class="custom_button" id="close2" onclick="hideProject(event,'2')"><i class="material-icons">close_fullscreen</i></button>
+                    </div>
+                    <div id="projectText2" class="prjText">
+                        <p>Here is the information</p>
+                    </div>
+                </div>
+                <div class="project showScroll" id="project3" onclick="showProject(event,'3')">
+                    <p class="projectDescription">3. Projekt</p>
+                    <div class="customButtonContainer">
+                        <button class="custom_button" id="close3" onclick="hideProject(event,'3')"><i class="material-icons">close_fullscreen</i></button>
+                    </div>
+                    <div id="projectText3" class="prjText">
+                        <p>Here is the information</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div id="links">
+            <h2 style="color: white; grid-area: text; margin-bottom: 50px; text-align: center;" id="heading3">You can find me on</h2>
+            <div id="linksLine">
+                <div id="linkDivsLeft">
+                    <div class="linkContainer">
+                        <a href="https://github.com/" target="_blank" style="text-decoration: none;">
+                            <i class="fa fa-github" id="github"></i>
+                            <span style="color: white; vertical-align: middle; line-height: 50px; font-size: 20px;">Github</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="linkDivsMiddle">
+                    <div class="linkContainer">
+                        <a href="https://de.linkedin.com/" target="_blank" style="text-decoration: none;">
+                            <i class="fa fa-linkedin" id="linkedIn"></i>
+                            <span style="color: white; vertical-align: middle; line-height: 50px; font-size: 20px;
+                                         padding-left: 10px;">LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="linkDivsRight">
+                    <div class="linkContainer">
+                        <a href="https://www.xing.com/" target="_blank" style="text-decoration: none;">
+                            <i class="fa fa-xing" id="linkedIn"></i>
+                            <span style="color: white; vertical-align: middle; line-height: 50px; font-size: 20px;
+                                     padding-left: 10px;">Xing</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="message">
+            <div id="messageContainer"><i class="fa fa-envelope" id="messageIcon"></i></div>
+        </div>
+    </div>
+    <div id="background">
+        <div id="backgroundContainer">
+            <div id="space">
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+            </div>
+            <div id="dropletContainer">
+                <div id="droplet"></div>
+            </div>
+            <div id="soil"></div>
+        </div>
+    </div>
+    <div id="shootingStarsGame">
+        <div id="shootingStar1">
+            <div id="body4"></div>
+            <div id="head4"></div>
+        </div>
+        <div id="shootingStar2">
+            <div id="body5"></div>
+            <div id="head5"></div>
+        </div>
+        <div id="shootingStar3">
+            <div id="body6"></div>
+            <div id="head6"></div>
+        </div>
+        <div id="shootingStar4">
+            <div id="body7"></div>
+            <div id="head7"></div>
+        </div>
+        <div id="shootingStar5">
+            <div id="body8"></div>
+            <div id="head8"></div>
+        </div>
+        <div id="satelite"></div>
+        <div id="blobfishContainer">
+            <div id="blobfish"></div>
+        </div>
+        <div class="dropletContainer">
+            <div class="dropletWhale"></div>
+        </div>
+        <div class="whaleContainer">
+            <div class="whale"></div>
+        </div>
+        <div id="meteorCrash">
+            <img src="meteor_impact.png" id="meteorCrater">
+            <div id="meteorPlain"></div>
+        </div>
+        <div id="meteor"></div>
+        <div class="score">
+            <div id="flexContainer">
+                <img src="shoot.png" style="width: auto;height: 70px; margin-right: 10px;margin-left: 10px; margin-top: 10px;">
+                <p style="padding-right: 10px; font-size: 20px;text-align: center;margin-top: 30px;" id="scoreDisplay"></p>
+            </div>
+            <i class="fa fa-times-circle" id="exitScore"></i>
+        </div>
+        <div class="scoreBlob">
+            <div id="flexContainerBlob">
+                <img src="blobfish_cut.png" style="width: 100px;height: 50px; margin-top: 20px;">
+                <p style="padding-right: 10px; font-size: 20px; margin-bottom: 50px;text-align: center;margin-top: 20px;" id="scoreDisplayBlob"></p>
+            </div>
+            <i class="fa fa-times-circle" id="exitScoreBlob"></i>
+        </div>
+        <div class="scoreSatelite">
+            <div id="flexContainerSatelite">
+                <img src="satellite.png" style="height: 70px;width: auto; margin-top: 10px;">
+                <p style="padding-right: 10px; font-size: 20px; margin-bottom: 50px;text-align: center;margin-top: 20px;margin-right: 20px;" id="scoreDisplaySatelite"></p>
+            </div>
+            <i class="fa fa-times-circle" id="exitScoreSatelite"></i>
+        </div>
+        <div class="scoreMeteor">
+            <div id="flexContainerMeteor">
+                <img src="meteor-clipart-md.png" style="height: 70px;width: auto; margin-top: 10px;margin-left: 10px;">
+                <p style="padding-right: 10px; font-size: 20px; margin-bottom: 50px;text-align: center;margin-top: 20px;margin-right: 20px;" id="scoreDisplayMeteor"></p>
+            </div>
+            <i class="fa fa-times-circle" id="exitScoreMeteor"></i>
+        </div>
+        <div class="scoreWhale">
+            <div id="flexContainerWhale">
+                <img src="blue_whale.png" style="height: 70px;width: auto; margin-top: 10px;margin-left: 0px;transform: scaleX(-1);">
+                <p style="padding-right: 10px; font-size: 20px; margin-bottom: 50px;text-align: center;margin-top: 20px;margin-right: 0px;" id="scoreDisplayWhale"></p>
+            </div>
+            <i class="fa fa-times-circle" id="exitScoreWhale"></i>
+        </div>
+        <div class="finalScore">
+            <div id="finalScoreContainer">
+                <p class="resultShowHeading">Achievements</p>
+                <i class="fa fa-times-circle resultShowExit"></i>
+                <div class="resultText">
+                    <div id="resultTextHeadings1">Extra Info</div>
+                    <div id="resultTextHeadings2">Achievement</div>
+                    <div id="resultTextHeadings3">Description</div>
+                    <div id="resultTextHeadings4">Score</div>
+                    <div id="resultTextDetails">
+                        <div id="resultTextInfoSatelite"><i class="fa fa-times ckeckImages fa-2x"></i></div>
+                        <div id="resultTextSymbolSatelite">
+                            <img src="satellite.png" class="detailImg">
+                        </div>
+                        <div id="resultTextTextSatelite">The satelite is pretty easy to see. Try looking into the night sky</div>
+                        <div id="resultTextScoreSatelite">0</div>
+                        <div id="resultTextInfoStar">0x</div>
+                        <div id="resultTextSymbolStar">
+                            <img src="shoot.png" class="detailImg">
+                        </div>
+                        <div id="resultTextTextStar">You need to be fast to catch the shooting stars!</div>
+                        <div id="resultTextScoreStar">0</div>
+                        <div id="resultTextInfoBlob"><i class="fa fa-times ckeckImages fa-2x"></i></div>
+                        <div id="resultTextSymbolBlob">
+                            <img src="blobfish_cut.png" class="detailImg">
+                        </div>
+                        <div id="resultTextTextBlob">Normally the blobfish lives deep under the sea. However, it comes to the surface from time to time</div>
+                        <div id="resultTextScoreBlob">0</div>
+                        <div id="resultTextInfoMeteor"><i class="fa fa-times ckeckImages fa-2x"></i></div>
+                        <div id="resultTextSymbolMeteor">
+                            <img src="meteor-clipart-md.png" class="detailImg">
+                        </div>
+                        <div id="resultTextTextMeteor">You need to see the meteor before it hits the ground!</div>
+                        <div id="resultTextScoreMeteor">0</div>
+                        <div id="resultTextInfoWhale"><i class="fa fa-times ckeckImages fa-2x"></i></div>
+                        <div id="resultTextSymbolWhale">
+                            <img src="blue_whale.png" class="detailImg" style="transform: scaleX(-1);">
+                        </div>
+                        <div id="resultTextTextWhale">Maybe the blobfish has something to do with this</div>
+                        <div id="resultTextScoreWhale">0</div>
+                    </div>
+                    <div id="resultTextSaldo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup">
+        <form action="/action_page.php" class="form-container">
+            <h1 style="grid-area: header">Send Message</h1>
+            <i class="fa fa-times-circle" id="messageExit"></i>
+            <div style="grid-area: name; display: flex; flex-direction: column;">
+                <label for="name"><b>Name</b></label>
+                <input style="flex-basis: 100%;" type="text" placeholder="Enter Name" name="name" required>
+            </div>
+            <div style="grid-area: email; flex-direction: column; display: flex;">
+                <label for="email"><b>Email</b></label>
+                <input style="width: 80%;" type="text" placeholder="Enter Email" name="email" required>
+            </div>  
+            <div style="grid-area: message;">
+                <label for="subject"><b>Message</b></label>
+                <textarea id="subject" name="subject" placeholder="Enter Text"></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+    
+
+</html>
+
