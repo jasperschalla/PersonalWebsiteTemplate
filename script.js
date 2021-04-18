@@ -1,3 +1,7 @@
+import $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
+
 var score = 0;
 var scoreBlob = 0;
 var scoreBlobSeen = 0;
