@@ -1,3 +1,3 @@
 # Website Template for Personal Website
 
-This is a small website for showing my academic carrier and presenting my work. However, this is so far only a template since I did not give any personal information yeat but rather created a template for this. I included some reactive elements you can explore. Try to click on moving elements which seem to be reactive and explore the template!
+This is a small website for showing my academic carrier and presenting my work. However, this is so far only a template since I did not give any personal information yeat but rather created a template for this. Hence, the different links and the message function do not work properly. I included some reactive elements as a kind of minigame with some easter eggs you can explore. Try to click on moving elements which seem to be reactive and explore the template!
